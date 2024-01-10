@@ -16,9 +16,8 @@ def predict(text, model_path, token_path):
     
     label = list(emotions.values())
     probs = list(predictions[0])
-    print(probs)
     
-    return emotions.get(np.argmax(probs))
+    return (label, probs)
     
 def predict_root(input):
      return predict(input, 'nlp-prototype.h5', 'tokenizer-prototype.pkl')
