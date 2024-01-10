@@ -20,4 +20,4 @@ if not hasattr(st, 'already_started_server'):
         prediction = predict_root(input)
         return jsonify({"prediction":prediction})
 
-    app.run(port=8888)
+    app.run(port=8000)
