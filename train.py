@@ -45,7 +45,7 @@ ts_x = tf.keras.preprocessing.sequence.pad_sequences(sequences, maxlen=50)
 ts_y = to_categorical(ts_label)
 
 batch_size = 128
-epochs = 12
+epochs = 16
 history = model.fit([tr_x, tr_x], tr_y, epochs=epochs, batch_size=batch_size,
                     validation_data=([val_x, val_x], val_y))
 

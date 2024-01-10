@@ -21,6 +21,5 @@ def predict(text, model_path, token_path):
     return emotions.get(np.argmax(probs))
     
 def predict_root(input):
-    return predict(input, 'nlp-transform.h5', 'tokenizer-transform.pkl')
-
-print(predict_root("it was miserable outside today, rain and sleet everywhere"))
+     return predict(input, 'nlp-prototype.h5', 'tokenizer-prototype.pkl')
+    # return predict(input, 'archive/nlp.h5', 'archive/tokenizer.pkl')
