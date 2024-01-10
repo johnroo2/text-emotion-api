@@ -6,6 +6,7 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['ENV'] = 'production'
+app.config['MAX_CONTENT_LENGTH'] = 10485760
 
 @app.route("/", methods=["POST"])
 @cross_origin()
